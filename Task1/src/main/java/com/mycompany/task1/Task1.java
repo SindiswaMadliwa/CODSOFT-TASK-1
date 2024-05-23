@@ -19,7 +19,7 @@ public class Task1 {
             Random random = new Random();
             int min = 1;
             int max = 100;
-            int attemptsLimit = 5; // Limiting the number of attempts
+            int attemptsLimit = 5; 
             int score = 0;
             boolean playAgain = true;
            
@@ -36,7 +36,7 @@ public class Task1 {
                 while (attempts < attemptsLimit && !guessedCorrectly) {
                     System.out.print("Enter your guess: ");
                     int guess = scanner.nextInt();
-                    scanner.nextLine(); // Consume newline character
+                    scanner.nextLine();
                    
                     if (guess == randomNumber) {
                         System.out.println("Congratulations! You've guessed the correct number.");
@@ -57,7 +57,7 @@ public class Task1 {
                
                 System.out.println("Your current score: " + score);
                
-                // Ask if the user wants to play again
+               
                 System.out.print("Do you want to play again? (yes/no): ");
                 String playAgainResponse = scanner.nextLine();
                 playAgain = playAgainResponse.equalsIgnoreCase("yes");
